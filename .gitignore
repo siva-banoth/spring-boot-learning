@@ -1,0 +1,24 @@
+# Maven
+target/
+
+# Java
+*.class
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+
+# Spring Tool Suite
+.springBeans
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Eclipse compiled output
+bin/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!--configuring TARGET/DEPENDENT component-->
+	<bean id="collector" class="com.vector.beans.BillCollector" autowire="constructor">
+
+
+	</bean>
+
+	<!--configuring DEPENDENCY components-->
+	<bean id="credit" class="com.vector.beans.CreditCard" primary="true" />
+	<bean id="debit" class="com.vector.beans.DebitCard" />
+	<bean id="upi" class="com.vector.beans.UPI" />
+
+
+</beans>

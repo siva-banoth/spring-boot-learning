@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="reportManager" class="com.vector.beans.ReportManager"
+		autowire="constructor" />
+
+	<bean id="pdfCreator" class="com.vector.beans.PdfReportCreator" primary="true"/>
+	<bean id="excelCreator" class="com.vector.beans.ExcelReportCreator" />
+
+</beans>

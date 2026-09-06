@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<bean id = "mLister" class="com.pack.MovieLister">
+		<constructor-arg name = "movieFinder" ref = "mFinder"/>
+	</bean>
+	
+	<bean id="mFinder" class="com.pack.MovieFinder"/>
+
+</beans>

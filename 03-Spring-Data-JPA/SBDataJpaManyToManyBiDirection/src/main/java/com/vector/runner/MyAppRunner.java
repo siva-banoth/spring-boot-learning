@@ -31,7 +31,8 @@ public class MyAppRunner implements ApplicationRunner {
 		// removeBook(1L);
 
 	}
-
+	
+	// cascade should be removed
 	private void removeBook(long l) {
 		service.removeBook(l);
 		

@@ -21,22 +21,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 public class Book {
-	
+
 	@Id
-	@GeneratedValue(strategy  = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
-	
-	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinTable(
-			name = "BOOK_AUTHOR", 
-			joinColumns = @JoinColumn(name = "BOOK_ID"),
-			inverseJoinColumns = @JoinColumn(name = "AUTHOR_ID")
-			)
+
+	@ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@JoinTable(name = "BOOK_AUTHOR", 
+	joinColumns = @JoinColumn(name = "BOOK_ID"), 
+	inverseJoinColumns = @JoinColumn(name = "AUTHOR_ID"))
 	List<Author> authors = new ArrayList<>();
-	
-	
-	
 
 }

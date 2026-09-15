@@ -27,14 +27,16 @@ public class MyAppRunner implements ApplicationRunner {
 		// saveBook();
 
 		// loadBook(2L);
-		
+
 		// removeBook(1L);
 
 	}
 
+	
+	// cascadeType should be removed, else Hibernate throws error
 	private void removeBook(long l) {
 		service.removeBook(l);
-		
+
 	}
 
 	private void loadBook(long l) {

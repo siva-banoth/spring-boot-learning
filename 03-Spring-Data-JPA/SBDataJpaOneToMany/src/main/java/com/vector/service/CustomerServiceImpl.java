@@ -9,7 +9,7 @@ import com.vector.entity.Customer;
 import com.vector.entity.Orders;
 import com.vector.repository.CustomerRepository;
 
-@Service(value = "orderService")
+@Service(value = "customerService")
 public class CustomerServiceImpl implements CustomerService {
 
 	@Autowired
